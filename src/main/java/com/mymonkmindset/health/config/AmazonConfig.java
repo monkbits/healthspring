@@ -11,13 +11,5 @@ import com.amazonaws.services.s3.AmazonS3;
 
 //@Configuration
 public class AmazonConfig {
-//    @Bean
-//    public AmazonS3 s3(){
-////
-////        AWSCredentials awsCredentials = new BasicAWSCredentials("AKIARYEUCVGK2SMJY6X5","yAbrs0CHfY6SmvcYsmA5GOEWwN+ATPw2/I4sOMdi");
-////
-////        return AmazonS3ClientBuilder
-////                .standard()
-////                .withCredentials(new AWSStaticCredentialsProvider(awsCredentials)).build();
-//    }
+
 }
