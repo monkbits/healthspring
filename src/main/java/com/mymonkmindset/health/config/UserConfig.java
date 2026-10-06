@@ -1,11 +1,11 @@
-package com.mymonkmindset.health.User;
+package com.mymonkmindset.health.config;
 
 
+import com.mymonkmindset.health.entity.User;
+import com.mymonkmindset.health.model.UserRepository;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-
-import java.util.List;
 
 @Configuration
 public class UserConfig {

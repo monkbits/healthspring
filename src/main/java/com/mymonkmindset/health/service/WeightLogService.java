@@ -1,5 +1,7 @@
-package com.mymonkmindset.health.weightlog;
+package com.mymonkmindset.health.service;
 
+import com.mymonkmindset.health.entity.WeightLog;
+import com.mymonkmindset.health.model.WeightLogRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

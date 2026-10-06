@@ -1,4 +1,4 @@
-package com.mymonkmindset.health.User;
+package com.mymonkmindset.health.entity;
 
 import com.mymonkmindset.health.entity.WeightLog;
 import jakarta.persistence.*;

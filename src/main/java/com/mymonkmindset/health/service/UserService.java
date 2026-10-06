@@ -1,5 +1,7 @@
-package com.mymonkmindset.health.User;
+package com.mymonkmindset.health.service;
 
+import com.mymonkmindset.health.entity.User;
+import com.mymonkmindset.health.model.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

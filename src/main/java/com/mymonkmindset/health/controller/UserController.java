@@ -1,9 +1,11 @@
-package com.mymonkmindset.health.User;
+package com.mymonkmindset.health.controller;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.mymonkmindset.health.service.UserService;
+import com.mymonkmindset.health.entity.User;
 import com.mymonkmindset.health.entity.WeightLog;
 import com.mymonkmindset.health.service.WeightLogService;
 import org.springframework.beans.factory.annotation.Autowired;

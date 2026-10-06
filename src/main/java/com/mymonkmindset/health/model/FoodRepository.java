@@ -1,10 +1,10 @@
 package com.mymonkmindset.health.model;
 
-import com.mymonkmindset.health.entity.WeightLog;
+import com.mymonkmindset.health.entity.Food;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface  WeightLogRepository extends JpaRepository<WeightLog,Long>{
+public interface FoodRepository extends JpaRepository<Food, Long> {
 
 }

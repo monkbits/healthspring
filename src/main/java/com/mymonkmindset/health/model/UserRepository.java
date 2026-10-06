@@ -1,9 +1,8 @@
-package com.mymonkmindset.health.User;
+package com.mymonkmindset.health.model;
 
+import com.mymonkmindset.health.entity.User;
 import org.springframework.stereotype.Repository;
 import org.springframework.data.jpa.repository.JpaRepository;
-import org.springframework.data.jpa.repository.Query;
-import java.util.Optional;
 
 @Repository
 public interface UserRepository extends JpaRepository<User, Long>{
