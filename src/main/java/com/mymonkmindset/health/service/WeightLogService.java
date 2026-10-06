@@ -3,6 +3,8 @@ package com.mymonkmindset.health.weightlog;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class WeightLogService {
     private final WeightLogRepository weightLogRepository;
@@ -12,6 +14,10 @@ public class WeightLogService {
         this.weightLogRepository = weightLogRepository;
     }
 
+
+    public List<WeightLog> getwls(){
+        return weightLogRepository.findAll();
+    }
     public WeightLog addWeightLog(WeightLog weightLog){
         return this.weightLogRepository.save(weightLog);
     }

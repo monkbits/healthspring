@@ -1,16 +1,13 @@
 package com.mymonkmindset.health.User;
 
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mymonkmindset.health.weightlog.WeightLog;
-import com.mymonkmindset.health.weightlog.WeightLogService;
-import org.joda.time.DateTime;
+import com.mymonkmindset.health.entity.WeightLog;
+import com.mymonkmindset.health.service.WeightLogService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
-import java.time.LocalDateTime;
 
 @RestController
 @RequestMapping(path = "/")
@@ -23,9 +20,14 @@ public class UserController {
         this.userService = userService;
     }
 
-    @GetMapping
-    public List<User> getusers(){
-        return this.userService.getUsers();
+//    @GetMapping
+//    public List<User> getusers(){
+//        return userService.getUsers();
+//    }
+
+    @GetMapping(path = "/")
+    public List<WeightLog> getweight(){
+        return weightLogService.getwls();
     }
 
     @GetMapping(path = "/a")

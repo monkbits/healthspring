@@ -1,10 +1,10 @@
 package com.mymonkmindset.health.User;
 
-import com.mymonkmindset.health.weightlog.WeightLog;
+import com.mymonkmindset.health.entity.WeightLog;
 import jakarta.persistence.*;
-import java.time.Year;
+
 import java.util.ArrayList;
-import java.util.Date;
+
 @Entity
 @Table(name = "users")
 public class User {
@@ -14,10 +14,12 @@ public class User {
             sequenceName = "user_sequence",
             allocationSize = 1
     )
+
     @GeneratedValue(
             strategy = GenerationType.SEQUENCE,
             generator = "user_sequence"
     )
+
     private long id;
     private int age;
     private int weight;

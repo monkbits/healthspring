@@ -22,16 +22,23 @@ public class WeightLog {
     private LocalDate dateTime;
     private float weight_kg;
 
+    public WeightLog() {
+        this.dateTime = LocalDate.now() ;
+        this.weight_kg = 0.0f;
+    }
+
+    public WeightLog(long id, LocalDate dateTime, float weight_kg) {
+        this.id = id;
+        this.dateTime = dateTime;
+        this.weight_kg = weight_kg;
+    }
+
     public WeightLog(LocalDate dateTime, float weight_kg) {
         this.dateTime = dateTime;
         this.weight_kg = weight_kg;
     }
 
-    public WeightLog(float weight_kg, LocalDate dateTime, long id) {
-        this.weight_kg = weight_kg;
-        this.dateTime = dateTime;
-        this.id = id;
-    }
+
 
     public LocalDate getDateTime() {
         return dateTime;
